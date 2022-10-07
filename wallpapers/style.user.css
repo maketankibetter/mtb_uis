@@ -5,7 +5,7 @@
 @version      1.0
 @author       #MakeTankiBetter (sn0wman)
 @homepageURL  https://maketankibetter.tk/uis/wallpapers/
-@updateURL    https://raw.githubusercontent.com/maketankibetter/mtb_uis/master/wallpapers
+@updateURL    https://github.com/maketankibetter/mtb_uis/raw/main/wallpapers/style.user.css
 @preprocessor stylus
 @var          select wallpaper      'Select your wallpaper:'   {
                                     'No changes':              'none',
