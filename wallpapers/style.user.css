@@ -1,0 +1,148 @@
+/* ==UserStyle==
+@name         Wallpapers
+@description  This is additional extension for Tanki Online new interface. It can change wallpaper on battle joining screen.
+@namespace    github.com/maketankibetter/mtb_uis/wallpapers
+@version      1.0
+@author       #MakeTankiBetter (sn0wman)
+@homepageURL  https://maketankibetter.tk/uis/wallpapers/
+@updateURL    https://raw.githubusercontent.com/maketankibetter/mtb_uis/master/wallpapers
+@preprocessor stylus
+@var          select wallpaper      'Select your wallpaper:'   {
+                                    'No changes':              'none',
+                                    'Custom':                  'custom',
+                                    'Classic':                 'classic',
+                                    'Classic new':             'classicNew',
+                                    'Halloween 2021':          'hw21',
+                                    "Steampunk - part 1":      'SP1',
+                                    "New Year 2022":           'NY22',
+                                    "Chinise New Year 2022":   'CNNY22',
+                                    "Valentine's days 2022":   'vd22',
+                                    "Iron days 2022":          'lpj22',
+                                    "Women's day 2022":        'wd22',
+                                    'Cosmonautics day 2022':   'cosmonauticsD2022',
+                                    'Dark Matter':             'darkmatter',
+                                    'Easter 2022':             'e22',
+                                    'May holidays 2022':       'mh22',
+                                    'Summer Sport Games 2022': 'SSG22',
+                                    'UFO day 2022':            'ufoDay22',
+                                    'Birthday! 13 years!':     '13years',
+                                    'Hocus Pocus':             'hp22',
+                                    'Summer festival 2022':    'sf22',
+                                    'Tankers day 2022':        'td22',
+                                    'Circus day 2022':         'circus22'
+                                                          }
+@var          checkbox center       'Center image?'                1
+@var          checkbox cover        'Is the image for fullscreen?' 1
+@var          text     customImage  'Paste your wallpaper code, that you got there: https://vk.cc/cgk0TT' '"   Paste here   "'
+==/UserStyle== */
+@-moz-document url-prefix("https://tankionline.com/play"), url-prefix("https://public-deploy1.test-eu.tankionline.com/browser-public/index.html"), url-prefix("https://public-deploy2.test-eu.tankionline.com/browser-public/index.html"), url-prefix("https://public-deploy3.test-eu.tankionline.com/browser-public/index.html"), url-prefix("https://public-deploy4.test-eu.tankionline.com/browser-public/index.html"), url-prefix("https://public-deploy5.test-eu.tankionline.com/browser-public/index.html"), url-prefix("https://public-deploy6.test-eu.tankionline.com/browser-public/index.html"), url-prefix("https://public-deploy7.test-eu.tankionline.com/browser-public/index.html"), url-prefix("https://public-deploy8.test-eu.tankionline.com/browser-public/index.html"), url-prefix("https://public-deploy9.test-eu.tankionline.com/browser-public/index.html") {
+    if (center != 1) {[data-style="ApplicationLoaderComponentStyle-container Common-background"] {background-position: left top;}}
+    if (cover != 1) {[data-style="ApplicationLoaderComponentStyle-container Common-background"]{background-size: unset;}}
+    if (wallpaper == 'classic'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background.282d8580.webp'), url('/browser-public/static/images/background/background.282d8580.webp');
+        }
+    }
+    if (wallpaper == 'classicNew'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background.4a9fffd6.webp'), url('/browser-public/static/images/background/background.4a9fffd6.webp');
+        }
+    }
+    if (wallpaper == 'hw21'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_hw2021.5e63cb74.webp'), url('/browser-public/static/images/background/background_hw2021.5e63cb74.webp');
+        }
+    }
+    if (wallpaper == 'SP1'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_redesign.84045669.webp'), url('/browser-public/static/images/background/background_redesign.84045669.webp');
+        }
+    }
+    if (wallpaper == 'NY22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_ny2022.e3b8a597.webp'), url('/browser-public/static/images/background/background_ny2022.e3b8a597.webp');
+        }
+    }
+    if (wallpaper == 'CNNY22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/chinese_ny.c663a455.webp'), url('/browser-public/static/images/background/chinese_ny.c663a455.webp');
+        }
+    }
+    if (wallpaper == 'vd22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/valentines_day.3cb1d859.webp'), url('/browser-public/static/images/background/valentines_day.3cb1d859.webp');
+        }
+    }
+    if (wallpaper == 'lpj22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/iron_days.000444b1.webp'), url('/browser-public/static/images/background/iron_days.000444b1.webp');
+        }
+    }
+    if (wallpaper == 'wd22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_womens_day.107f108b.webp'), url('/browser-public/static/images/background/background_womens_day.107f108b.webp');
+        }
+    }
+    if (wallpaper == 'cosmonauticsD2022'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_cosmonautics.3904a881.webp'), url('/browser-public/static/images/background/background_cosmonautics.3904a881.webp');
+        }
+    }
+    if (wallpaper == 'darkmatter'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_dark_matter.85bbf59c.webp'), url('/browser-public/static/images/background/background_dark_matter.85bbf59c.webp');
+        }
+    }
+    if (wallpaper == 'e22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_easter2022.cf5a6e71.webp'), url('/browser-public/static/images/background/background_easter2022.cf5a6e71.webp');
+        }
+    }
+    if (wallpaper == 'mh22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_may_holidays.68c29c39.webp'), url('/browser-public/static/images/background/background_may_holidays.68c29c39.webp');
+        }
+    }
+    if (wallpaper == 'SSG22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_ssg.c74b70b6.webp'), url('/browser-public/static/images/background/background_ssg.c74b70b6.webp');
+        }
+    }
+    if (wallpaper == 'ufoDay22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_ufo.3d1b1edf.webp'), url('/browser-public/static/images/background/background_ufo.3d1b1edf.webp');
+        }
+    }
+    if (wallpaper == '13years'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_13y.695ecbf9.webp'), url('/browser-public/static/images/background/background_13y.695ecbf9.webp');
+        }
+    }
+    if (wallpaper == 'hp22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_focus.55f2f38a.webp'), url('/browser-public/static/images/background/background_focus.55f2f38a.webp');
+        }
+    }
+    if (wallpaper == 'sf22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_tomato.7702ab97.webp'), url('/browser-public/static/images/background/background_tomato.7702ab97.webp');
+        }
+    }
+    if (wallpaper == 'td22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/background_tanker_day.e48ddaae.webp'), url('/browser-public/static/images/background/background_tanker_day.e48ddaae.webp');
+        }
+    }
+    if (wallpaper == 'circus22'){
+        [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+background-image: url('/play/static/images/background/circus.c6273f49.webp'), url('/browser-public/static/images/background/circus.c6273f49.webp');
+        }
+    }
+    if (wallpaper == 'custom') {
+        if customImage != "paste here" {
+            [data-style="ApplicationLoaderComponentStyle-container Common-background"] {
+                background-image: url(''customImage'');
+            }
+        }
+    }
+}
